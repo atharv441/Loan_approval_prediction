@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction Form</title>
+</head>
+<body>
+    <h1>Loan Prediction Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.Gender.label_tag }}
+        {{ form.Gender }}
+        <br>
+        {{ form.Married.label_tag }}
+        {{ form.Married }}
+        <br>
+        {{ form.Dependents.label_tag }}
+        {{ form.Dependents }}
+        <br>
+        {{ form.Education.label_tag }}
+        {{ form.Education }}
+        <br>
+        {{ form.Self_Employed.label_tag }}
+        {{ form.Self_Employed }}
+        <br>
+        {{ form.ApplicantIncome.label_tag }}
+        {{ form.ApplicantIncome }}
+        <br>
+        {{ form.CoapplicantIncome.label_tag }}
+        {{ form.CoapplicantIncome }}
+        <br>
+        {{ form.LoanAmount.label_tag }}
+        {{ form.LoanAmount }}
+        <br>
+        {{ form.Loan_Amount_Term.label_tag }}
+        {{ form.Loan_Amount_Term }}
+        <br>
+        {{ form.Credit_History.label_tag }}
+        {{ form.Credit_History }}
+        <br>
+        {{ form.Property_Area.label_tag }}
+        {{ form.Property_Area }}
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
+
+</html>
